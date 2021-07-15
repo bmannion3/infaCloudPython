@@ -1,4 +1,4 @@
-#Introduction:
+# Introduction:
 
 This module helps running informatica cloud jobs from unix shell or windows shell. I have been using informatica cloud for years and always had 
 problems integrating it to other applications for on-demand cloud workflow execution, so I have decided to write this python module for the purpose 
@@ -7,16 +7,16 @@ mentioned.
 You can execute this python script as pre-session command or command task from informatica, you can call this from a shell script or power shell, which 
 opens a lot of possibilities for informatica cloud.
 
-#Usage:
+# Usage:
 runInfaCloudTask.py -c CREDFILE -j JOBFILE [-w] WAITTIME [-i] intervalTime [-m] maxTries [-h] [-v] 
 
-#Required Arguments:
+# Required Arguments:
 ```
   -c CREDFILE, 		--credFile CREDFILE  		( specifies credentails file name )
   -j JOBFILE, 		--jobFile JOBFILE    		( specifies job information file )
 
 ```
-#Optional Arguments:
+# Optional Arguments:
 ```
   -w waitTime, 		--waitTime waitTime		( how many secs to wait while checking task status recursively )( Default = 60 )
  -i intervalTime, 	--intervalTime intervalTime	( how many secs to wait between status checks )( Default = 1 )
